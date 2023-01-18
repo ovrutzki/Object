@@ -35,7 +35,6 @@
 // //      color: "Red",
 // //      features: ["Autopilot", "Ludicrous Mode", "Supercharging"]
 // //    };
-   
 
 // //    console.log(car.features[1]);
 // // ---------------------------------------------------
@@ -71,7 +70,7 @@
 // //     console.log(Object.keys(person).length)
 // // }
 // // list(person1);
- 
+
 // // 3
 // // let client = "Betty";
 
@@ -105,12 +104,12 @@
 // // ]
 // // for (let i = 0; i < library.length; i++) {
 // //     if (library[i].alreadyRead) {
-// //         console.log(`You already read ${library[i].title} by ${library[i].author}`); 
+// //         console.log(`You already read ${library[i].title} by ${library[i].author}`);
 // //     } else {
-// //         console.log(`You still need to read ${library[i].title} by ${library[i].author}`); 
+// //         console.log(`You still need to read ${library[i].title} by ${library[i].author}`);
 
 // //     }
-    
+
 // // }
 // // EX 3
 // // -------------------------------------------------
@@ -138,7 +137,7 @@
 // // 8
 // myPenguins.fly = function (){
 //     if (myPenguins.canFly) {
-//        console.log('I can fly'); 
+//        console.log('I can fly');
 //     } else {
 //         console.log('no fly for me');
 //     }
@@ -155,7 +154,7 @@
 //     console.log('here is the keys:');
 //     for (const keys in object) {
 //         console.log(`${keys}:  ${object[keys]}`);
-        
+
 //     }
 // }
 // test(myPenguins);
@@ -179,7 +178,7 @@
 //     console.log('here is the keys:');
 //     for (const array in object) {
 //         console.log(`${array}:  ${object[array]}`);
-        
+
 //     }
 // }
 // printTest(myPenguins);
@@ -192,7 +191,7 @@
 //       console.log("QUACK!!!");
 //     },
 //   };
-  
+
 // const ramon = {
 //     name: "Ramón",
 //     origin: "Happy Feet",
@@ -201,7 +200,7 @@
 //       console.log("Estoy encantado de conocerle.");
 //     },
 //   };
-  
+
 //   const fred = {
 //     name: "Fred",
 //     origin: "Sitting Ducks",
@@ -210,7 +209,7 @@
 //       console.log("Hi there!");
 //     },
 //   };
-  
+
 // //   1
 // let penguins = [gunter, fred, ramon];
 // console.log(penguins[0]);
@@ -232,7 +231,7 @@
 // function penguinName(array){
 //     for (let i = 0; i < array.length; i++) {
 //         console.log(penguins[i].name);
-        
+
 //     }
 // }
 // penguinName(penguins);
@@ -240,7 +239,7 @@
 // function penguinHello(array){
 //     for (let i = 0; i < array.length; i++) {
 //         penguins[i].sayHello();
-        
+
 //     }
 // }
 // penguinHello(penguins);
@@ -248,7 +247,7 @@
 // function penguinAdd(array){
 //     for (let i = 0; i < array.length; i++) {
 //         penguins[i].numberOfFeet = 2;
-        
+
 //     }
 // }
 // penguinAdd(penguins);
@@ -259,7 +258,7 @@
 //         if (penguins[i].canFly) {
 //             console.log(`${penguins[i].name} Can fly`);
 //         }
-        
+
 //     }
 // }
 //  isFlying(penguins);
@@ -269,122 +268,276 @@
 
 // // EX7
 const mySchool = {
-    name : 'Moveo BootCamp',
-    location : 'allenby, tel aviv',
-    students : [
-        {name : 'dror', age : 20, grade : 5, classes : ['JS', 'Logics', 'CSS']},
-        {name : 'Ben', age : 15, grade : 3, classes : ['HTML','Alguritmic']},
-        {name : 'Yossi', age : 15, grade : 3, classes : ['chemistry','Alguritmic']},
-    ],
-    teachers : [
-        {name : 'Roti', subject : 'JavaStript', gradeLevels :[4, 5, 6] , classes : ['JS', 'HTML', 'CSS']},
-        {name : 'Lili', subject : 'HTML', gradeLevels :[2, 3] , classes : ['Logics','Alguritmic' ]},
-
-    ],
-
-}
-function classesMatch(name1, name2) {
-    for (let i = 0; i < mySchool.students.length; i++) {
-      if (mySchool.students[i].name === name1) {
-        for (let j = 0; j < mySchool.teachers.length; j++) {
-            if (mySchool.teachers[j].name === name2) {
-                for (let q = 0; q < mySchool.students[i].classes.length; q++) {
-                     for (let z = 0; z < mySchool.teachers[j].classes.length; z++) {
-                         if (mySchool.students[i].classes[q] === mySchool.teachers[j].classes[z]) {
-                           console.log('same classes');
-                              return true;
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    console.log('different classes');
-  }
-  
-  classesMatch('dror', 'Roti');
-  
+  name: "Moveo BootCamp",
+  location: "allenby, tel aviv",
+  students: [
+    { name: "dror", age: 20, grade: 5, classes: ["JS", "Logics", "CSS"] },
+    { name: "Ben", age: 15, grade: 3, classes: ["HTML", "Alguritmic"] },
+    { name: "Yossi", age: 15, grade: 3, classes: ["chemistry", "Alguritmic"] },
+  ],
+  teachers: [
+    {
+      name: "Roti",
+      subject: "JavaStript",
+      gradeLevels: [4, 5, 6],
+      classes: ["JS", "HTML", "CSS"],
+    },
+    {
+      name: "Lili",
+      subject: "HTML",
+      gradeLevels: [2, 3],
+      classes: ["Logics", "Alguritmic"],
+    },
+  ],
+};
 // function classesMatch(name1, name2) {
 //     for (let i = 0; i < mySchool.students.length; i++) {
-//         if (mySchool.students[i].name === name1) {
-//             for (let j = 0; j < mySchool.students[i].classes.length; j++) {
-//                 for (let q = 0; q < mySchool.teachers.length; q++) {
-//                     if (mySchool.teachers[q].name === name2) {
-//                         for (let z = 0; z < mySchool.teachers[q].classes.length; z++) {
-//                             if (mySchool.students[i].classes[j]===mySchool.teachers[q].classes[z]) {
-//                                 console.log('same classes');
-//                                 return true;
-//                             } 
-                            
-                            
-                            
-//                         }
-//                     }
-                    
+//       if (mySchool.students[i].name === name1) {
+//         for (let j = 0; j < mySchool.teachers.length; j++) {
+//             if (mySchool.teachers[j].name === name2) {
+//                 for (let q = 0; q < mySchool.students[i].classes.length; q++) {
+//                      for (let z = 0; z < mySchool.teachers[j].classes.length; z++) {
+//                          if (mySchool.students[i].classes[q] === mySchool.teachers[j].classes[z]) {
+//                            console.log('same classes');
+//                               return true;
 //                 }
-                
+//               }
 //             }
-            
+//           }
 //         }
-        
+//       }
 //     }
-//     console.log('differnt classes');
-//     return false;
+//     console.log('different classes');
+//   }
+
+//   classesMatch('dror', 'Roti');
+
+// function classesMatch(name1, name2) {
+//   for (let i = 0; i < mySchool.students.length; i++) {
+//     if (mySchool.students[i].name === name1) {
+//       for (let j = 0; j < mySchool.teachers.length; j++) {
+//         if (mySchool.teachers[j].name === name2) {
+//           for (let q = 0; q < mySchool.students[i].classes.length; q++) {
+//             for (let z = 0; z < mySchool.teachers[j].classes.length; z++) {
+//               if (
+//                 mySchool.students[i].classes[q] ===
+//                 mySchool.teachers[j].classes[z]
+//               ) {
+//                 console.log("same classes");
+//                 return true;
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+//   console.log("differnt classes");
 // }
-// function classesMatch('Yossi', 'Roti');
+
+// classesMatch("dror", "Roti");
 
 // EX 8
 // const library = {
-//     name: "Springfield Public Library",
-//     location: "Springfield",
-//     books: [
-//       {
-//         title: "The Great Gatsby",
-//         author: "F. Scott Fitzgerald",
-//         year: 1925,
-//         genre: "Novel",
-//         publisher: "Charles Scribner's Sons",
-//         pages: 180,
-//         isbn: "978-0-7432-6555-2",
+//   name: "Springfield Public Library",
+//   location: "Springfield",
+//   books: [
+//     {
+//       title: "The Great Gatsby",
+//       author: "F. Scott Fitzgerald",
+//       year: 1925,
+//       genre: "Novel",
+//       publisher: "Charles Scribner's Sons",
+//       pages: 180,
+//       isbn: "978-0-7432-6555-2",
 //     },
-//       {
-//         title: "To Kill a Mockingbird",
-//         author: "Harper Lee",
-//         year: 1960,
-//         genre: "Novel",
-//         publisher: "J.B. Lippincott & Co.",
-//         pages: 281,
-//         isbn: "978-0-044-93349-2",
-//       },
-//       {
-//         title: "The Catcher in the Rye",
-//         author: "J.D. Salinger",
-//         year: 1951,
-//         genre: "Novel",
-//         publisher: "Little, Brown and Company",
-//         pages: 214,
-//         isbn: "978-0-316-76953-3",
-//       },
-//       {
-//         title: "Pride and Prejudice",
-//         author: "Jane Austen",
-//         year: 1813,
-//         genre: "Novel",
-//         publisher: "T. Egerton",
-//         pages: 279,
-//         isbn: "978-0-141-19031-4",
+//     {
+//       title: "To Kill a Mockingbird",
+//       author: "Harper Lee",
+//       year: 1960,
+//       genre: "Novel",
+//       publisher: "J.B. Lippincott & Co.",
+//       pages: 281,
+//       isbn: "978-0-044-93349-2",
 //     },
-//     ],
-//   };
- 
-//   function titleByGenre(genre){
-//       for (let i = 0; i < library.books.length; i++){
-//         if (library.books[i].genre === genre) {
-//             console.log(library.books[i].title);
-//         }
+//     {
+//       title: "The Catcher in the Rye",
+//       author: "J.D. Salinger",
+//       year: 1951,
+//       genre: "Novel",
+//       publisher: "Little, Brown and Company",
+//       pages: 214,
+//       isbn: "978-0-316-76953-3",
+//     },
+//     {
+//       title: "Pride and Prejudice",
+//       author: "Jane Austen",
+//       year: 1813,
+//       genre: "Novel",
+//       publisher: "T. Egerton",
+//       pages: 279,
+//       isbn: "978-0-141-19031-4",
+//     },
+//   ],
+// };
+
+// function titleByGenre(genre){
+//     for (let i = 0; i < library.books.length; i++){
+//       if (library.books[i].genre === genre) {
+//           console.log(library.books[i].title);
 //       }
+//     }
 
+// }
+// titleByGenre("Novel")
+// =================================================
+// Objects Advanced
+const library = {
+  name: "Springfield Public Library",
+  location: "Springfield",
+  books: "hello",
+};
+// EX1
+// 1
+// function objectKeys(object) {
+//   const keys = Object.keys(object);
+//   console.log(keys);
+// }
+
+// objectKeys(library);
+
+//2
+// let newObject = {};
+// function keysToCapital(library) {
+//   for (let key of Object.keys(library)) {
+//     newObject[key.toUpperCase()] = library[key];
 //   }
-//   titleByGenre("Novel")
+//   console.log(newObject);
+// }
 
+// keysToCapital(library);
+
+// 3
+// function objectVal(object) {
+//   let values = Object.values(object);
+//   console.log(values);
+// }
+// objectVal(library);
+
+// 4
+// const shop = {
+//   name: 6,
+//   location: 7,
+//   books: 8,
+//   amazing: 3,
+// };
+// const shop2 = {};
+// function multiplied(object) {
+//   for (const key of Object.keys(shop)) {
+//     shop2[key] = shop[key] * 2;
+//   }
+//   console.log(shop2);
+// }
+// multiplied(shop);
+
+// 5
+// const shop2 = {};
+// function reverse(object) {
+//   for (const key of Object.keys(shop)) {
+//     for (const value of Object.values(shop)) {
+//       shop2[value] = key;
+//     }
+//   }
+//   console.log(shop2);
+// }
+// reverse(shop);
+
+// 6
+// let sum = 0;
+// function objectSum(object) {
+//   for (const value of Object.values(object)) {
+//     sum += value;
+//   }
+//   console.log(sum);
+// }
+// objectSum(shop);
+
+// 7
+// let average;
+// let sum = 0;
+// function averageValue(object) {
+//   const values = Object.values(object);
+//   for (const value of Object.values(object)) {
+//     sum += value;
+//     average = sum / values.length;
+//   }
+//   console.log(average);
+// }
+// averageValue(shop);
+
+// 8
+// let newObj = {};
+// function alphabet(object) {
+//   const keys = Object.keys(object);
+//   keys.sort();
+//   for (const key of keys) {
+//     newObj[key] = shop[key];
+//   }
+//   console.log(newObj);
+// }
+// alphabet(shop);
+
+const people = {
+  person1: { name: "John", age: 25 },
+  person2: { name: "Mike", age: 32 },
+  person3: { name: "Sara", age: 28 },
+};
+
+// 9
+function checkIfPersonExist(object, name) {
+  let names = Object.values(object);
+
+  names.forEach((e) => {
+    if (e.name.toLowerCase() === name.toLowerCase()) {
+      console.log("true");
+    }
+  });
+}
+
+checkIfPersonExist(people, "Mike");
+
+// 19
+let words = [
+  "hello",
+  "world",
+  "JavaScript",
+  "israel",
+  "hello",
+  "hello",
+  "JavaScript",
+];
+// let counter = {};
+// function wordFrequency(array) {
+//   const test = array.reduce(
+//     (obj, word) => (obj[word] || 0) obj[word]++,
+//     {}
+//   );
+//   console.log(test);
+// }
+
+// wordFrequency(words);
+
+// 21
+const obj = { a: 1, b: 2 };
+const newObj = {};
+function updateKeyName(old, New, object) {
+  for (const key of Object.keys(object)) {
+    newObj[key] = obj[key];
+    newObj[New] = newObj[old];
+  }
+  delete newObj[old];
+  console.log(newObj);
+}
+updateKeyName("a", "c", obj);
+
+// 22
